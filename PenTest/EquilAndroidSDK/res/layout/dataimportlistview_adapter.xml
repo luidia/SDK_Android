@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/fileNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="xxxx/xxxx"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FF000000" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fileDownLayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fileDownBtnClicked" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Down"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FF0000ff"/>
+
+            </FrameLayout>
+            
+            <FrameLayout
+                android:id="@+id/fileDeleteLayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fileDeleteBtnClicked" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Delete"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFff0000" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+    
+</FrameLayout>
